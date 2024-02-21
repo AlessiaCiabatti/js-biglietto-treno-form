@@ -15,6 +15,14 @@ let choice = document.querySelector('.choice');
 btn1.addEventListener('click', function(){
   biglietto.classList.remove('d-none');
 
+  let carrozza = Math.floor(Math.random() * 10) + 1;
+  console.log(carrozza);
+  document.getElementById('carrozza').innerHTML = carrozza;
+
+  let codice = Math.floor(Math.random() * 99999) + 1;
+  console.log(codice);
+  document.getElementById('codice').innerHTML = codice;
+
   console.log(nomeInput.value);
   titoloInput.innerHTML = nomeInput.value;
 
