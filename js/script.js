@@ -1,10 +1,12 @@
 // INPUT & BTN
 let nomeInput = document.querySelector('.nome-input');
 let chilometriInput = document.querySelector('.chilometri-input');
-let btn1 = document.querySelector('.btn1');
+const btn1 = document.querySelector('.btn1');
+const btn2 = document.querySelector('.btn2');
 
 // 
 let titoloInput = document.querySelector('.titolo-input');
+const biglietto = document.querySelector('.biglietto');
 
 // DROPDOWN
 let choice = document.querySelector('.choice');
@@ -42,5 +44,9 @@ btn1.addEventListener('click', function(){
     console.log(prezzoAdults.toFixed(2));
     console.log(choice.value);
   }
+})
+
+btn2.addEventListener('click', function(){
+  biglietto.classList.toggle('d-none');
 })
 
