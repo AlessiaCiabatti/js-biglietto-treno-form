@@ -9,9 +9,9 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 - va applicato uno sconto del 40% per gli over 65.
 
 ## SVOLGIMENTO
-1. con un prompt chiedere nome e cognome al passeggero e salvarlo in una variabile.
+1. chiedere nome e cognome al passeggero e salvarlo in una variabile.
 
-2. con un prompt chiedere il numero di chilometri che vuole percorrere il passeggero e salvarlo in una variabile.
+2. chiedere il numero di chilometri che vuole percorrere il passeggero e salvarlo in una variabile.
 
 3. chiedere la fascia di età al passeggero.
 

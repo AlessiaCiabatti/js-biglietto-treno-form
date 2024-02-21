@@ -3,17 +3,24 @@ let nomeInput = document.querySelector('.nome-input');
 let chilometriInput = document.querySelector('.chilometri-input');
 let btn1 = document.querySelector('.btn1');
 
+// 
+let titoloInput = document.querySelector('.titolo-input');
+
 // DROPDOWN
 let choice = document.querySelector('.choice');
 
 
 btn1.addEventListener('click', function(){
   console.log(nomeInput.value);
+  titoloInput.innerHTML = nomeInput.value;
+
   console.log(chilometriInput.value);
   
   if(choice.value === 'junior'){
     let chilometriTotali = Number(chilometriInput.value) * 0.21;
     let prezzoJunior = chilometriTotali - (chilometriTotali * 20 / 100);
+    document.getElementById('sconto').innerHTML = 'Sconto Junior';
+    document.getElementById('costo').innerHTML = prezzoJunior.toFixed(2);
     console.log(prezzoJunior.toFixed(2));
     console.log(choice.value);
   }
@@ -21,6 +28,8 @@ btn1.addEventListener('click', function(){
   else if(choice.value === 'senior'){
     let chilometriTotali = Number(chilometriInput.value) * 0.21;
     let prezzoSenior = chilometriTotali - (chilometriTotali * 40 / 100);
+    document.getElementById('sconto').innerHTML = 'Sconto Senior';
+    document.getElementById('costo').innerHTML = prezzoSenior.toFixed(2);
     console.log(prezzoSenior.toFixed(2));
     console.log(choice.value);
   }
@@ -28,6 +37,8 @@ btn1.addEventListener('click', function(){
   else{
     let chilometriTotali = Number(chilometriInput.value) * 0.21;
     let prezzoAdults = chilometriTotali;
+    document.getElementById('sconto').innerHTML = 'Nessuna';
+    document.getElementById('costo').innerHTML = prezzoAdults.toFixed(2);
     console.log(prezzoAdults.toFixed(2));
     console.log(choice.value);
   }
