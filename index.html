@@ -6,35 +6,45 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 <body>
 
   <section>
-    <div>
-      <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    </div>
-    
-    <div>
-      <p>Nome e Cognome</p>
-      <input type="text" class="nome-input form-control" placeholder="Nome e Cognome">
-    </div>
+    <div class="container">
+      <div class="text-center mt-4 mb-4">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+      </div>
+      
+      <div class="first text-center">
+        <div class="d-flex justify-content-between pt-4 my_padding mb-4">
+          <div>
+            <p class="my_style my_color mb-1">Nome e Cognome</p>
+            <input type="text" class="nome-input form-control my_style" placeholder="Nome e Cognome">
+          </div>
 
-    <div>
-      <p>Km da percorrere</p>
-      <input type="text" class="chilometri-input form-control" placeholder="Inserire km">
-    </div>
+          <div>
+            <p class="my_style my_color mb-1">Km da percorrere</p>
+            <input type="text" class="chilometri-input form-control my_style" placeholder="Inserire km">
+          </div>
 
-    <select class="choice form-select mt-3" aria-label="Default select example">
-      <option selected>Open this select menu</option>
-      <option value="junior">Junior</option>
-      <option value="adults">Adults</option>
-      <option value="senior">Senior</option>
-    </select>
+          <div>
+            <p class="my_style my_color mb-1">Fascia di età</p>
+            <select class="choice form-select my_style" aria-label="Default select example">
+              <option selected>Fascia di età</option>
+              <option value="junior">Junior</option>
+              <option value="adults">Adults</option>
+              <option value="senior">Senior</option>
+            </select>
+          </div>
+        </div>
 
-    <div>
-      <button type="button" class="btn1 btn btn-secondary mt-3">Genera</button>
-      <button type="button" class="btn2 btn btn-secondary mt-3">Reset</button>
+        <div class="pb-3">
+          <button type="button" class="btn1 btn btn-secondary mt-3 my_font me-3">Genera</button>
+          <button type="button" class="btn2 btn btn-secondary mt-3 my_font">Reset</button>
+        </div>
+      </div>
     </div>
   </section>
 

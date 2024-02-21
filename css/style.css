@@ -1,0 +1,59 @@
+:root{
+  --red: #b91450;
+  --btn-color: #cccccc;
+  --info-color: #808080;
+  --shadow: #791338;
+}
+
+body{
+  background-color: var(--red);
+}
+
+.container{
+  width: 70%;
+}
+
+h1{
+  color: white;
+  font-size: 1.8rem;
+}
+
+.first{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 3px #791338;
+}
+
+.my_style{
+  height: 30px;
+  width: 150px;
+  font-size: 14px;
+}
+
+.my_color{
+  color: var(--red);
+}
+
+.my_padding{
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+.my_font{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn1,
+.btn2{
+  background-color: var(--btn-color);
+  color: var(--red);
+  padding: 1px 3px;
+}
+
+.btn1:hover,
+.btn2:hover{
+  border-color: yellow;
+  background-color: var(--btn-color);
+  color: var(--red);
+}
