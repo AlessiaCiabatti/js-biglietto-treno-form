@@ -13,6 +13,8 @@ let choice = document.querySelector('.choice');
 
 
 btn1.addEventListener('click', function(){
+  biglietto.classList.remove('d-none');
+
   console.log(nomeInput.value);
   titoloInput.innerHTML = nomeInput.value;
 
@@ -47,6 +49,6 @@ btn1.addEventListener('click', function(){
 })
 
 btn2.addEventListener('click', function(){
-  biglietto.classList.toggle('d-none');
+  biglietto.classList.add('d-none');
 })
 
